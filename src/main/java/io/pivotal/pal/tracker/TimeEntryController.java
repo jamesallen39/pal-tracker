@@ -48,7 +48,7 @@ public class TimeEntryController {
         }
     }
 
-    @DeleteMapping("{id}")
+    @DeleteMapping("{id}}")
     public ResponseEntity<TimeEntry> delete(@PathVariable Long id) {
         timeEntriesRepo.delete(id);
 
