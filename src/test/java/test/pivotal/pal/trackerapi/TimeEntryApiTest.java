@@ -109,9 +109,6 @@ public class TimeEntryApiTest {
         Long id = createTimeEntry();
 
 
-
-
-
         ResponseEntity<String> deleteResponse = restTemplate.exchange("/time-entries/" + id, HttpMethod.DELETE, null, String.class);
 
 
